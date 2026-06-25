@@ -1,0 +1,6 @@
+venv/
+pycache
+*.рус
+*.log
+db.sqlite3
+./venv

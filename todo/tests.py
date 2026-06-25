@@ -91,7 +91,7 @@ class TodoViewTestCase(TestCase):
         self.assertEqual(response.templates[0].name, 'todo/index.html')
         self.assertEqual(list(response.context['tasks']), [task1, task2])
     
-        def test_detail_get_success(self):
+    def test_detail_get_success(self):
         task = Task(title='task1', due_at=timezone.make_aware(datetime(2024, 7, 1)))
         task.save()
         client = Client()
